@@ -6,7 +6,7 @@ var _GET = function(url) {
 	if (url.indexOf('?') >= 0) {
 		var querys = decodeURI(url).split('?')[1].split('&');
 		for (var i = 0; i < querys.length; i++) {
-			var q		= querys.split('='),
+			var q		= querys[i].split('='),
 				key		= q[0],
 				vals	= q[1].split('+');
 			if (_get.args[key] == undefined)
