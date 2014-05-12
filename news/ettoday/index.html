@@ -20,7 +20,7 @@
 				'type':			'get',
 				'url':			url,
 				'dataType':		'text/html',
-				function (page, resp, xhr) {
+				'success':		function (page, resp, xhr) {
 					console.log(page);
 					var record = {};
 					if (resp.statusCode == 200) {
