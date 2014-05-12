@@ -16,6 +16,7 @@
 		var id	= ids[i],
 			url	= 'http://www.ettoday.net/news/0/' + id + '.htm';
 			$.get(url, function (page, resp, xhr) {
+				console.log(page);
 				var record = {};
 				if (resp.statusCode == 200) {
 				var pg			= $(page);
