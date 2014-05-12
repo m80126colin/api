@@ -5,7 +5,7 @@ var _GET = function(url) {
 		url = location.href;
 	if (url.indexOf('?') >= 0) {
 		var querys = decodeURI(url).split('?')[1].split('&');
-		for (var i = 0; i < query; i++) {
+		for (var i = 0; i < querys.length; i++) {
 			var q		= querys.split('='),
 				key		= q[0],
 				vals	= q[1].split('+');
