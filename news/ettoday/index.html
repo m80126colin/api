@@ -6,6 +6,7 @@
 <script type="text/javascript" src="https://raw.github.com/jamespadolsey/jQuery-Plugins/master/cross-domain-ajax/jquery.xdomainajax.js"></script>
 <script type="text/javascript" src="/api/util.js"></script>
 <script type="text/javascript">
+	$('#container').load('http://google.com');
 	var ids		= (new _GET()).param('id'),
 		res		= {},
 		count	= 0;
